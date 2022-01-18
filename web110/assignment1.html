@@ -7,54 +7,20 @@
   <body>
     <p>
       <b>Activity 5: Tracing Internet Traffic</b><br>
-The activity familiarized me with traceroute command and how it helps to identify network problems.<br>
+The activity familiarized me with <b>traceroute</b> command and how it helps to identify network problems.<br>
 I learned that when sent over Internet, the traffic (packets) goes through a number of routers on the Internet (hops) to reach the desired destination, and traceroute command (in Windows – tracert) helps to trace the paths that traffic (packets) takes.<br>
 Traceroute sends Internet Control Message Protocol packets to the destination, with different time-to-live (TTL) values. Each time a packet is handed over to the next router, the TTL is decreased by 1. When TTL reaches 0, the packet is discarded and the router returns “Time Exceeded” message.  Traceroute sends the first packet with a TTL of 1 and increases the TTL by 1 on each following packet, until the destination responds or until the maximum TTL is reached. This way, we can see where the traffic has problems on the network (abnormal latencies or stops).<br>
 To practice using traceroute, I typed “cmd” in the search box of my Windows laptop to find and open Command Prompt, then typed: <i>tracert en.wikiversity.org</i><br>
 <br>
-The result was:<br>
-<br>
 Tracing route to dyna.wikimedia.org [2620:0:861:ed1a::1]<br>
 over a maximum of 30 hops:<br>
-
-  1    13 ms     6 ms     5 ms  	2601:246:4600:d980:5ee3:eff:fe42:e401<br>
-  2    15 ms    18 ms    19 ms  	2001:558:4040:119::1<br>
-  3    12 ms    11 ms    13 ms  	2001:558:302:840c::1<br>
-  4    15 ms     *         *      te-0-7-0-21-sur01.champaign.il.chicago.comcast.net [2001:558:300:202d::1]<br>
-  5    16 ms    13 ms    12 ms  	2001:558:320:bd::1
-  6     *        *         *     	Request timed out.
-  7    15 ms    16 ms    14 ms  	be-32221-cs02.chicago.il.ibone.comcast.net [2001:558:3:209::1]
-  8     *        *        *    		Request timed out.
-  9    16 ms    17 ms    14 ms  	be-302-cr13.350ecermak.il.ibone.comcast.net [2001:558:3:1b5::1]
- 10    14 ms    16 ms    17 ms  	be-1313-cs03.350ecermak.il.ibone.comcast.net [2001:558:3:ca::1]
- 11     *       20 ms    17 ms  	be-2311-pe11.350ecermak.il.ibone.comcast.net [2001:558:3:72::2]
- 12    29 ms     *        *     	2001:2000:3080:21c1::1
- 13     *        *        *     	Request timed out.
- 14    37 ms     *       38 ms  	ash-bb2-v6.ip.twelve99.net [2001:2034:1:74::1]
- 15     *        *        *     	Request timed out.
- 16    78 ms    74 ms    80 ms  	text-lb.eqiad.wikimedia.org [2620:0:861:ed1a::1]
-
-Trace complete.<br>
-
-This way, I could see the route packets took from my computer to en.wikiversity.org.<br>
-
-I also used traceroute-online.com to visually trace the route to en.wikiversity.org, but the hops differed from what was in my Command Prompt. <br>
-Turns out that when using this online tool, the originating system is a data center located in Texas, plus the tool enriches the output by utilizing mtr: <br>
-<i>“mtr online is an advanced version of the typical traceroute command. mtr combines ping and a traditional traceroute and will ping each hop in the network path”.</i><br>
+<i> It took 16 hops to get to the destination, and at first I pasted the result here but couldn't figure out yet how to stylize columns properly</i>
 <br>
-HOST: 0e3280ddb536                         Loss%   Snt   Last   Avg  Best  Wrst StDev
-  1.|-- 172.17.0.1                            0.0%     2    0.3   0.2   0.1   0.3   0.0
-  2.|-- gw-li777.linode.com                   0.0%     2    0.5   0.6   0.5   0.7   0.0
-  3.|-- 10.206.64.14                          0.0%     2    2.6   1.7   0.8   2.6   1.0
-  4.|-- 10.206.32.66                          0.0%     2    3.1   2.2   1.3   3.1   1.0
-  5.|-- 10.206.32.51                          0.0%     2    1.0   1.4   1.0   1.9   0.0
-  6.|-- 199.245.16.77                         0.0%     2    3.2   2.8   2.3   3.2   0.0
-  7.|-- ae-13.r21.nwrknj03.us.bb.gin.ntt.net  0.0%     2    3.0   3.1   3.0   3.2   0.0
-  8.|-- ae-3.r22.chcgil09.us.bb.gin.ntt.net   0.0%     2   24.3  23.3  22.3  24.3   1.0
-  9.|-- ae-30.a00.chcgil09.us.bb.gin.ntt.net  0.0%     2   27.5  24.8  22.1  27.5   3.7
- 10.|-- 192.80.17.198                         0.0%     2   22.0  22.6  22.0  23.2   0.0
- 11.|-- xe-4-2-0.cr2-eqiad.wikimedia.org      0.0%     2   31.2  30.7  30.2  31.2   0.0
- 12.|-- text-lb.eqiad.wikimedia.org           0.0%     2   29.8  29.8  29.8  29.8   0.0
+This way, I could see the route packets took from my computer to en.wikiversity.org.<br>
+<br>
+I also used <b>traceroute-online.com</b> to visually trace the route to en.wikiversity.org, but the hops differed from the output in my Command Prompt. <br>
+Turns out that when using this online tool, the originating system is a data center located in Texas, plus the tool enriches the output by utilizing mtr: <br>
+<i>“mtr online is an advanced version of the typical traceroute command. mtr combines ping and a traditional traceroute and will ping each hop in the network path”.</i>
 <br>
 Lessons learned through the activity: what is traceroute command and how it works in practice, mtr (mytraceroute) command for Linux. <br>
 The knowledge of these tools will be useful when I will need to identify network problems as a network administrator.</p>
