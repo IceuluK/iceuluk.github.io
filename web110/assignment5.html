@@ -20,7 +20,7 @@ To view the full configurations, I typed “ipconfig /all”. The output was mor
 <img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session%205%20ipconfig%20all.png?token=GHSAT0AAAAAABRD53XHEBHVR6TUTQVW4QZCYQULRGQ" style="width:650px;height:386px;"><br>
 <br>
 
-  •	Review Ping/Host. Verify local and remote connectivity using ping.
+  •	Review Ping/Host. Verify local and remote connectivity using ping.<br>
 <i>Ping</i> is a useful utility that is used to test the reachability of a host on a network. <br>
 Ping sends an ICMP (Internet Control Message Protocol) echo request messages and waits for a return message. By default ping sends 4 requests; after the response, one can see bytes sent and received and packets sent, received/lost.<br> 
 Ping can be used to troubleshoot network connectivity by reviewing potential packet loss on the way.<br> 
@@ -30,12 +30,12 @@ To practice using it, I pinged my local IP address and my default gateway addres
 <img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session%205%20ping%202.png?token=GHSAT0AAAAAABRD53XHQQ6MXM75AVWIT2HUYQULWPA" style="width:468px;height:415px;"><br>
 <br>
   •	Review Tracert. Trace the route to an Internet host such as 8.8.8.8.<br>
-<i>traceroute</i> command (in Windows – tracert) helps to trace the paths that traffic (packets) takes.<br>
+<i>traceroute</i> command (in Windows – tracert) helps to trace the paths that network packets take.<br>
 Traceroute sends ICMP packets to the destination, with different time-to-live (TTL) values. Each time a packet is handed over to the next router, the TTL is decreased by 1. When TTL reaches 0, the packet is discarded and the router returns “Time Exceeded” message. Traceroute sends the first packet with a TTL of 1 and increases the TTL by 1 on each following packet, until the destination responds or until the maximum TTL is reached. This way, we can see where the traffic has problems on the network (abnormal latencies or stops).<br>
 To practice using traceroute, I opened the Command Prompt, then typed “tracert 8.8.8.8”<br>
 The result was:<br>
 <i>Tracing route to dns.google [8.8.8.8]<br>
-over a maximum of 30 hops:</i>
+over a maximum of 30 hops:</i><br>
 It took 14 hope to get to the destination.<br>
 <img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Screenshot%20tracert.png?token=GHSAT0AAAAAABRD53XHP2KBTTUP7KI5FLSCYQULYEA" style="width:739px;height:340px;"><br>
 This way, I could see the route packets took from my computer to 8.8.8.8 <br>
@@ -53,7 +53,7 @@ I used nslookup utility in Command Prompt to review host addresses and also usin
 <b>Activity: Research, identify and describe the necessary components required to set-up a home network for yourself.</b><br>
 After reading a few resources on the Internet, I came to a conclusion that setting up a home network requires the following steps:<br>
 1.	<u>Planning</u> – thinking about what will I need, should the network be wired or wireless, how many devices will I have on the network<br>
-Wired connection (using Ethernet cables) is generally faster and beneficial if I would, for example, be gaming heavily, but I use Internet to: connect remotely to work office, do the schoolwork, and to stream movies sometimes. I feel like these activities are not very demanding in terms of network usage.
+Wired connection (using Ethernet cables) is generally faster and beneficial if I would, for example, be heavily playing video games, but I use Internet to: connect remotely to work office, do the schoolwork, and to stream movies sometimes. I feel like these activities are not very demanding in terms of network usage.
 I live in a rather small apartment, so don’t need to be concerned about Wi-Fi coverage, or getting few routers. <br>
 I would have about 5-6 devices on the network, all connected wirelessly (personal laptop, work laptop, mobile phone, my kid’s iPad), besides maybe the TV which I would connect via cable.<br>
 2.  <u>Choosing the equipment</u>– for a home network, I would need:<br>
@@ -61,11 +61,11 @@ I would have about 5-6 devices on the network, all connected wirelessly (persona
 - the router, to connect a modem to other devices on my network, and allow communication between those devices (that form a local area network) and the Internet. Nowadays, router usually incorporates Wireless Access Point to emits signals for wireless devices.<br>
 - cables –to connect the router to the modem (for example, cat5e cable with RJ45 connectors can be used), and for wired connection(s).<br>
 - devices that will be on the network - do they have wireless capability and/or ports for cables?<br>
-3.	<u>Set up the network</u><br>
+3.	<u>Setting up the network</u><br>
 - changing default parameters of the router (SSID, router admin password)<br>
 - set up DHCP and DNS servers <br>
 - configure firewall for security<br>
-
+<br>
 <b><i> With this activity, I was able to reflect on what components I would need for a small home network. The activity gave me a better understanding of networking concepts and network devices. I will use this knowledge in personal life – when I need to set up a home network after I move soon, and at work it is necessary for me to have foundational knowledge of what networks consist of.</i></b><br>
     </p>
   </body>
