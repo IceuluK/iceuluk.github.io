@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Assignment 6</title>
+  </head>
+  <body>
+    <p>
+        <b>Activity: Practice web browser safety</b><br>
+        •	Review browser options<br>
+        In my browser (Google Chrome), I clicked “More” at the top right > Settings > Security and Privacy, and reviewed my settings:<br>
+        - blocked third-party cookies<br>
+        - “Do Not Track” request with my browsing traffic option turned on<br>
+        - always use secure connections<br>
+        - Standard protection against websites, downloads, extensions that are known to be dangerous (no browsing data sent to Google)<br>
+        - warn if my passwords are exposed in a data breach<br>
+        I reflected on my web browser safety and think it is acceptable but there’s room for improvement (I do store passwords saved in Google Chrome for convenience).<br>
+        <br>
+        •	Check your browser's version to ensure the browser is up to date.<br>
+        To check browser’s version, I went to More > Settings > About Chrome, and made sure the browser was up to date.<br>
+        <img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%206/Session%206%20chrome%20update.png?token=GHSAT0AAAAAABRD53XHDITYL3352Y2I46IQYQ5QJVA" style="width:305px;height:64px;"><br>
+        <br>
+        •	Check add-ons to ensure they are up to date.<br>
+        In Google Chrome, I clicked More > More tools > Extensions, and clicked “Update” on the add-ons page, to bring them up to date.<br>
+        <br>
+        •	Clear the browser cache. Identify how to clear browser history and cookies.<br>
+        To clear browser cache in Google Chrome, one needs to go to More menu > Settings > Security and Privacy > Clear browsing data > select time range > Cached images and files<br>
+        <br>
+        •	Check auto form settings and remove any personal information you do not want saved.<br>
+        In Google Chrome, I went to More menu > Settings > Autofill, and reviewed the settings. I have a lot of passwords stored for autofill, as well as a few payment methods and addresses. I feel like it’s a battle between better security and convenience, and the latter often wins.<br> 
+        <br>
+        •	Visit a secure website, such as https://en.wikiversity.org and view certificate information for that website.<br>
+        To view a certificate on any website, one needs to click the lock icon next to the domain name > Connection is secure > Certificate is valid. It is a good practice to check for a website’s SSL certificate to make sure it uses secure, encrypted connection and is less vulnerable to cybercrimes like man-in-the middle attack etc.<br>
+        <img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%206/Session%206%20certificate%20.png?token=GHSAT0AAAAAABRD53XG5VQI3XJHBV4DPZZKYQ5QNGA" style="width:405px;height:541px;"><br>
+        <br>
+        •	Use private / incognito browsing to visit a website that normally remembers you. Notice how you are unknown to the website when using private browsing.<br>
+        In Google Chrome, I clicked More menu > New Incognito Window > Gmail. The browser wanted me to sign in in Gmail in incognito mode since it didn’t have the cookies and my saved information.<br>
+        <br>
+        <i>With this activity, I was able to review and reflect on my web browser privacy and security settings. At work, I am much more vigilant – there is no autofill of any forms and there are no saved passwords in my work laptop’s browser. This activity made me think of getting a paid VPN subscription for my personal laptop, as well as getting a password manager as 1Password. </i>
+        <br>
+        <br>
+        <b>Activity: Use anti-malware software to scan your system and test malware detection.</b><br>
+        I reviewed the offered Wikipedia resource that compares various antivirus software.<br>
+        On my personal laptop, I used to use just Windows Defender, but a few months ago I downloaded the free version of Avast Antivirus. It has all the features that I need (on-demand scans, blocking potentially harmful websites), and also recently the firewall feature was added to the free version as well (with premium features like port scan alerts).<br>
+        For the activity, I went to Avast and ran a smart scan on my system. The scan usually includes “Browser threats”, “Viruses & malware detection”, and “Performance issues”. The scan didn’t find any problems besides “Programs slowing down your PC: 16” in the Performance section. The “Resolve” button led me to the page offering to buy the premium version of the software, so I skipped the warning for now.<br> 
+        At work, antivirus and firewall are managed by my organization’s IT team, but I went to Control Panel and saw that they use Crowdstrike Falcon for the antivirus.<br>
+        <br>
+        I also reviewed the resource on the EICAR Anti-Virus Test File. It was developed by the European Institute for Computer Antivirus Research (EICAR) and Computer Antivirus Research Organization (CARO). It lets people test their antivirus software – the file contains a string to which an AV should respond to the same way as if it would to a harmful virus.<br>
+        I attempted to download the text file from eicar.org, and Avast immediately responded with “Threat secured warning:<br>
+        <img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%206/Session%206%20eicar%20threat.png?token=GHSAT0AAAAAABRD53XH36YUBHRXETHZCYZKYQ5QHYQ" style="width:601px;height:420px;"><br>
+        <br>
+        <i>With this activity, I was able to review different antiviruses and their features in free and paid versions, and test AV on my machine using the EICAR test file.</i><br>
+        <br>
+        <br>
+        <b>Activity: Test your firewall using a testing service such as Gibson Research: ShieldsUP!</b><br>
+        After reviewing the offered resource, I learned some new information:<br>
+        Universal Plug n' Play (UPnP) is a “zero-authentication” (no passwords required) system for allowing devices to discover and connect with each other on a private local network. It used to be enabled by default in consumer Internet routers since 2002 or 2003. Any home appliance — TV's, game consoles, printers, fax machines, etc. includes support for UPnP.<br>
+        UPnP was never meant to be exposed to the external public Internet but its exposure gives malicious actors direct access to the inside of an exposed private network.<br>
+        I ran the exposure test for my router and reviewed the result:<br>
+        <img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%206/Session%206%20firewall%20test.png?token=GHSAT0AAAAAABRD53XH6BCJOQ6V3GACHDYCYQ5QLSA" style="width:547px;height:394px;"> <br>
+        <br>
+        <i>With this activity, I learned about how dangerous it can be when an equipment responds to a UPnP probe. The test helped me to feel more secure in my personal online activity, and it is a “good-to-know” piece of knowledge for me as a professional as well. </i>
+        
+    </p>
+  </body>
+</html>
