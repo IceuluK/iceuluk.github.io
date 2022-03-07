@@ -1,14 +1,18 @@
 body {
     background-color: plum;
+    opacity: 0.5;
     font-family: Georgia, serif;
+    font-size: 18px;
   }
   
   h1 {
     color: white;
-    margin-left: 100px;
+    margin-left: 150px;
+    font-size: 40px;
   }
 
   p {
     color: purple;
+    text-indent: 40px;
     margin-left: 20px;
   }
