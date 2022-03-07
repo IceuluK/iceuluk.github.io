@@ -13,6 +13,7 @@ I learned that when sent over Internet, the traffic (packets) goes through a num
 Traceroute sends Internet Control Message Protocol packets to the destination, with different time-to-live (TTL) values. Each time a packet is handed over to the next router, the TTL is decreased by 1. When TTL reaches 0, the packet is discarded and the router returns “Time Exceeded” message.  
 Traceroute sends the first packet with a TTL of 1 and increases the TTL by 1 on each following packet, until the destination responds or until the maximum TTL is reached. This way, we can see where the traffic has problems on the network (abnormal latencies or stops).<br>
 <br>
+</p>
 To practice using traceroute, I typed “cmd” in the search box of my Windows laptop to find and open Command Prompt, then typed: <i>tracert en.wikiversity.org</i><br>
 The result was:<br>
 Tracing route to dyna.wikimedia.org [2620:0:861:ed1a::1]<br>
@@ -27,6 +28,6 @@ Turns out that when using this online tool, the originating system is a data cen
 <br>
 Lessons learned through the activity: what is traceroute command and how it works in practice, mtr (mytraceroute) command for Linux. <br>
 The knowledge of these tools will be useful when I will need to identify network problems as a network administrator.
-</p>
+</br>
   </body>
 </html>
