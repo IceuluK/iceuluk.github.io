@@ -18,7 +18,7 @@ To verify IP address settings, I opened Command Prompt and typed “ipconfig”.
 To view the full configurations, I typed “ipconfig /all”. The output was more detailed information about my machine’s IP configuration, including details like Lease Obtained/Expires and DNS servers. <br>
 (Only results for the wireless adapter shown below)<br>
 <br>
-<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session%205%20ipconfig%20all.png?token=GHSAT0AAAAAABSBD75M2TQEH77UA7JWQ3ZUYRGOIGA" style="width:650px;height:386px;"><br>
+<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session%205%20ipconfig%20all.png?token=GHSAT0AAAAAABSIUQCLTHJPRWABFOQQMLP4YRP52XQ" style="width:650px;height:386px;"><br>
 <br>
 
   •	Review Ping/Host. Verify local and remote connectivity using ping.<br>
@@ -26,9 +26,9 @@ To view the full configurations, I typed “ipconfig /all”. The output was mor
 Ping sends an ICMP (Internet Control Message Protocol) echo request messages and waits for a return message. By default ping sends 4 requests; after the response, one can see bytes sent and received and packets sent, received/lost.<br> 
 Ping can be used to troubleshoot network connectivity by reviewing potential packet loss on the way.<br> 
 To practice using it, I pinged my local IP address and my default gateway address (both were looked up in ipconfig details in the previous activity), then pinged 8.8.8.8 (Google).<br> 
-<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session%205%20ping.png?token=GHSAT0AAAAAABSBD75MGP7W2UXZUJFRXMPGYRGOI3Q" style="width:469px;height:204px;"><br>
+<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session%205%20ping.png?token=GHSAT0AAAAAABSIUQCKTO4QJQKEZ56QHEKYYRP53DA" style="width:469px;height:204px;"><br>
 <br>
-<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session%205%20ping%202.png?token=GHSAT0AAAAAABSBD75MP2D5RTMYM4AGOYHMYRGOJJQ" style="width:468px;height:415px;"><br>
+<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session%205%20ping%202.png?token=GHSAT0AAAAAABSIUQCL7ERBRI67QXMCCR7GYRP53NA" style="width:468px;height:415px;"><br>
 <br>
   •	Review Tracert. Trace the route to an Internet host such as 8.8.8.8.<br>
 <i>traceroute</i> command (in Windows – tracert) helps to trace the paths that network packets take.<br>
@@ -38,14 +38,14 @@ The result was:<br>
 <i>Tracing route to dns.google [8.8.8.8]<br>
 over a maximum of 30 hops:</i><br>
 It took 14 hope to get to the destination.<br>
-<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Screenshot%20tracert.png?token=GHSAT0AAAAAABSBD75MZNAVICVZFLZNKH6KYRGOJWQ" style="width:739px;height:340px;"><br>
+<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Screenshot%20tracert.png?token=GHSAT0AAAAAABSIUQCK3GDV6NOET4AZS2T4YRP53XQ" style="width:739px;height:340px;"><br>
 This way, I could see the route packets took from my computer to 8.8.8.8 <br>
 <br>
   •	Review Nslookup. Verify name resolution using nslookup and an Internet host name, such as en.wikiversity.org.<br>
 <i>nslookup</i> is another useful tool used for querying the DNS (Domain Name System) servers to obtain the corresponding domain name and IP address.<br>
 I used nslookup utility in Command Prompt to review host addresses and also using a custom DNS server, and reviewed the results:<br>
-<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session%205%20nslookup.png?token=GHSAT0AAAAAABSBD75ME5ZRLCJEGCULHVJ6YRGOKEQ" style="width:398px;height:461px;">
-<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session5%20nslookup2.png?token=GHSAT0AAAAAABSBD75NVEH74ZOCCEXH4OBYYRGOKPA" style="width:421px;height:300px;"><br>
+<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session%205%20nslookup.png?token=GHSAT0AAAAAABSIUQCL27YDQL6G6SQB3NXAYRP54HA" style="width:398px;height:461px;">
+<img src="https://raw.githubusercontent.com/IceuluK/iceuluk.github.io/main/assets/images/Session%205/Session5%20nslookup2.png?token=GHSAT0AAAAAABSIUQCKPGSNJOC4CV5SJ43QYRP54WA" style="width:421px;height:300px;"><br>
 <br>
 
 <b><i> With this activity, I learned about and practiced using some basic but important network administration utilities: ipconfig, ping, tracert, nslookup. All these will be used by me at work – for example, when I want to troubleshoot network connectivity, or map a domain name to an IP address. In personal life so far, I remember trying to use ipconfig /flushdns when having some DNS errors. </i></b><br>
