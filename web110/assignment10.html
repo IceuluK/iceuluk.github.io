@@ -27,7 +27,7 @@
     context.fillStyle = "white";
   
     // Select font, alignment, draw text, and fill characters
-    context.font = "36px sans-serif";
+    context.font = "30px sans-serif";
     context.textAlign="left";
     context.strokeText("Aisuluu K.", 20, 50);
     context.fillText("Aisuluu K.", 20, 50);
@@ -42,6 +42,7 @@
     var context = example.getContext("2d");
   
     context.beginPath();
+    context.moveTo(50,50)
     context.fillStyle = 'white';
     context.arc(50, 50, 20, 0, 2 * Math.PI, false);
     context.fill();
