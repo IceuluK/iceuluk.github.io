@@ -48,6 +48,19 @@
     context.closePath();
   </script>
   
+  <canvas id="square" width="200" height="150">
+    This text is displayed if your browser does not support HTML5 Canvas.
+  </canvas>
+  
+  <script>
+    var example = document.getElementById("square");
+    var context = example.getContext("2d");
+  
+    context.beginPath();
+    context.fillStyle = 'purple';
+    context.fillRect(130, 105, 70, 70);
+    context.closePath();
+  </script>
 
   <canvas id="gradient" width="200" height="150">
     This text is displayed if your browser does not support HTML5 Canvas.
@@ -66,6 +79,12 @@
     ctx.fillStyle = grd;
     ctx.fillRect(10, 10, 150, 80);
     </script>
+
+<p>
+    <b>Activity: Introduction to Javascript</b><br>
+    Summary:<br>
+    In this session, I was introduced to Javascript. Javascript is 
+</p>
 
   </body>
 </html>
