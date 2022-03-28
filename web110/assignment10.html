@@ -33,7 +33,7 @@
     context.fillText("Aisuluu K.", 160, 50);
   </script>
 
-<canvas id="circle" width="360" height="240">
+<canvas id="circle" width="200" height="150">
     This text is displayed if your browser does not support HTML5 Canvas.
   </canvas>
   
@@ -41,13 +41,26 @@
     var example = document.getElementById("circle");
     var context = example.getContext("2d");
   
-    // Draw a red circle, radius 35
     context.beginPath();
     context.fillStyle = 'white';
-    context.arc(60, 140, 20, 0, 2 * Math.PI, false);
+    context.arc(90, 100, 20, 0, 2 * Math.PI, false);
     context.fill();
     context.closePath();
   </script>
   
+  <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    
+    // Create gradient
+    var grd = ctx.createLinearGradient(0, 0, 200, 0);
+    grd.addColorStop(0, "purple");
+    grd.addColorStop(1, "white");
+    
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80);
+    </script>
+
   </body>
 </html>
