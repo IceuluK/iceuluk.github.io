@@ -48,8 +48,13 @@
     context.closePath();
   </script>
   
+
+  <canvas id="gradient" width="200" height="150">
+    This text is displayed if your browser does not support HTML5 Canvas.
+  </canvas>
+  
   <script>
-    var c = document.getElementById("myCanvas");
+    var c = document.getElementById("gradient");
     var ctx = c.getContext("2d");
     
     // Create gradient
