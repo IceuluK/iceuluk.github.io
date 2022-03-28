@@ -23,14 +23,14 @@
     var context = example.getContext("2d");
   
     // Set stroke and fill to blue
-    context.strokeStyle = "blue";
-    context.fillStyle = "blue";
+    context.strokeStyle = "white";
+    context.fillStyle = "white";
   
     // Select font, alignment, draw text, and fill characters
     context.font = "36px sans-serif";
-    context.textAlign="center";
-    context.strokeText("Aisuluu K.", 160, 50);
-    context.fillText("Aisuluu K.", 160, 50);
+    context.textAlign="left";
+    context.strokeText("Aisuluu K.", 50, 50);
+    context.fillText("Aisuluu K.", 50, 50);
   </script>
 
 <canvas id="circle" width="200" height="150">
@@ -52,7 +52,7 @@
   <canvas id="gradient" width="200" height="150">
     This text is displayed if your browser does not support HTML5 Canvas.
   </canvas>
-  
+
   <script>
     var c = document.getElementById("gradient");
     var ctx = c.getContext("2d");
