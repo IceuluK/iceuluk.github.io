@@ -10,6 +10,12 @@ body {
     font-size: 40px;
   }
 
+  h2 {
+    color: white;
+    margin-left: 475px;
+    font-size: 30px;
+  }
+
   p {
     color: purple;
     margin-left: 20px;
