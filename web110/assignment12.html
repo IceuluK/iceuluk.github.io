@@ -12,7 +12,37 @@
     <ul>
       <li> SELECT * FROM Customers; </li>
     </ul>
-
+<p> Select customers from USA (SELECT *) </p>
+    <ul>
+      <li> SELECT * FROM Customers<br>
+        WHERE Country='USA';
+      </li>
+    </ul>
+<p> Select customers from USA (SELECT *) </p>
+    <ul>
+      <li> SELECT * FROM Customers<br>
+        WHERE Country='USA';
+      </li>
+    </ul>
+<p> Count number of products (count number or rows that match ProductID)</p>
+    <ul>
+      <li> SELECT COUNT(ProductID) <br>
+        FROM Products;        
+      </li>
+    </ul>
+<p> Insert a new record in the Customers table</p>
+    <ul>
+      <li> INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) <br>
+        VALUES ('AK Sweets','Aisuluu K','250 W Dundee Rd','Wheeling','60090','USA');       
+      </li>
+    </ul>
+<p> Update first customer's contact name and city in Customers table </p>
+    <ul>
+      <li> UPDATE Customers <br>
+        SET ContactName='Hugo Stiglitz', City='Berlin' <br>
+        WHERE CustomerID=1;
+      </li>
+    </ul>
 
   </body>
 </html>
